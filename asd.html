@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Galaxis</title>
+    <link rel="stylesheet" href="galaxis.css">
+</head>
+<body>
+
+    <h1>Nap és a Bolygók</h1>
+    <div class="solar-system">
+        <!-- Nap -->
+        <div class="sun"></div>
+
+        <!-- Bolygók -->
+        <div class="planet mercury" onclick="showInfo('Merkúr', 'A Merkúr a Naphoz legközelebbi bolygó.')"></div>
+        <div class="planet venus" onclick="showInfo('Vénusz', 'A Vénusz a második bolygó a Naprendszerben, forró felszínéről ismert.')"></div>
+        <div class="planet earth" onclick="showInfo('Föld', 'A Föld az egyetlen ismert bolygó, amely életet hordoz.')"></div>
+        <div class="planet mars" onclick="showInfo('Mars', 'A Mars a negyedik bolygó, vörös színe miatt híres.')"></div>
+        <div class="planet jupiter" onclick="showInfo('Jupiter', 'A Jupiter a Naprendszer legnagyobb bolygója.')"></div>
+        <div class="planet saturn" onclick="showInfo('Szaturnusz', 'A Szaturnusz híres a gyűrűiről.')"></div>
+        <div class="planet uranus" onclick="showInfo('Uránusz', 'Az Uránusz jeges, távoli bolygó.')"></div>
+        <div class="planet neptune" onclick="showInfo('Neptunusz', 'A Neptunusz a nyolcadik bolygó a Naptól.')"></div>
+    </div>
+
+    <div class="planet-info">
+        <h2 id="planetName"></h2>
+        <p id="planetDescription"></p>
+    </div>
+
+    <script src="Untitled-1.js"></script>
+</body>
+</html>
