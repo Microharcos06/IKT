@@ -1,0 +1,114 @@
+body {
+    background: radial-gradient(circle, rgba(43,56,78,1) 0%, rgba(10,15,33,1) 40%, rgba(0,0,0,1) 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    position: relative; /* To contain stars */
+    overflow: hidden;
+}
+
+/* Generate stars */
+.stars {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: transparent;
+}
+
+.stars::before, .stars::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: transparent;
+    background: radial-gradient(2px 2px at 20% 30%, #fff, rgba(255,255,255, 0)),
+                radial-gradient(1.5px 1.5px at 70% 80%, #fff, rgba(255,255,255, 0)),
+                radial-gradient(1px 1px at 50% 50%, #fff, rgba(255,255,255, 0)),
+                radial-gradient(0.5px 0.5px at 10% 20%, #fff, rgba(255,255,255, 0)),
+                radial-gradient(2.5px 2.5px at 80% 20%, #fff, rgba(255,255,255, 0)),
+                radial-gradient(1.5px 1.5px at 60% 40%, #fff, rgba(255,255,255, 0));
+    animation: twinkle 15s infinite;
+    opacity: 0.1; /* Adjust the opacity for a subtler effect */
+}
+
+.stars::after {
+    animation-delay: 7.5s; /* Stagger the twinkling effect */
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+h1 {
+    text-align: left;
+    border: 10px solid red;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* Menu styling */
+nav.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between menu items */
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: white; /* Menu link text color */
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: subtle background */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav.menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light up background on hover */
+}
+
+.box {
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-image: none; /*Ide megy egy kép*/
+    margin: 20px auto;
+    max-width: 600px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.box h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+
+.box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
