@@ -1,0 +1,122 @@
+body {
+    background-color: black;
+    background-image: url(https://www.spacespheremaps.com/wp-content/uploads/HDR_nebulae_detail_image.png);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.solar-system {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+/* Nap */
+.sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('nap.jfif'); /* Nap kép */
+    background-size: cover;
+    border-radius: 50%;
+    top: 250px;
+    left: 250px;
+}
+
+.planet {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Bolygók képei és pozíciói */
+.planet.mercury {
+    background-image: url('merkur.jpg'); /* Merkúr kép */
+    top: 180px;
+    left: 290px;
+}
+
+.planet.venus {
+    background-image: url('venuss.webp'); /* Vénusz kép */
+    top: 130px;
+    left: 310px;
+}
+
+.planet.earth {
+    background-image: url('fold.jpg'); /* Föld kép */
+    top: 100px;
+    left: 370px;
+}
+
+.planet.mars {
+    background-image: url('mars.jpg'); /* Mars kép */
+    top: 80px;
+    left: 450px;
+}
+
+.planet.jupiter {
+    background-image: url('Jupiter.jpg'); /* Jupiter kép */
+    top: 250px;
+    left: 510px;
+}
+
+.planet.saturn {
+    background-image: url('saturnus.jfif'); /* Szaturnusz kép */
+    top: 350px;
+    left: 470px;
+}
+
+.planet.uranus {
+    background-image: url('uranus.jfif'); /* Uránusz kép */
+    top: 400px;
+    left: 330px;
+}
+
+.planet.neptune {
+    background-image: url('PezBzd9Fehsq9XWgWMauVV.jpg'); /* Neptunusz kép */
+    top: 370px;
+    left: 210px;
+}
+
+.planet-info {
+    display: none;
+    margin-top: 20px;
+}
+
+nav.menu {
+    position: relative;
+    z-index: 10;
+}
+
+/* Menu styling */
+nav.menu ul {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between menu items */
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: white; /* Menu link text color */
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: subtle background */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav.menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light up background on hover */
+}

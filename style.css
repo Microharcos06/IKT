@@ -5,7 +5,7 @@ body {
     background-size: cover;
     color: white;
     position: relative; /* To contain stars */
-    overflow: hidden;
+    overflow: auto;
 }
 
 /* Generate stars */
@@ -156,3 +156,16 @@ button {
     background-color: transparent;
 }
 
+h2{
+    text-align: center;
+}
+
+
+.image-text{
+    overflow: hidden;
+}
+
+.image {
+    float: left;
+    margin-right: 15px;
+}
