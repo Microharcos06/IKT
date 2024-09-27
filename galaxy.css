@@ -21,7 +21,7 @@ body {
     position: absolute;
     width: 100px;
     height: 100px;
-    background-image: url('nap.jfif'); /* Nap kép */
+    background-image: url('Images/nap.jfif'); /* Nap kép */
     background-size: cover;
     border-radius: 50%;
     top: 250px;
@@ -39,49 +39,49 @@ body {
 
 /* Bolygók képei és pozíciói */
 .planet.mercury {
-    background-image: url('merkur.jpg'); /* Merkúr kép */
+    background-image: url('Images/merkur.jpg'); /* Merkúr kép */
     top: 180px;
     left: 290px;
 }
 
 .planet.venus {
-    background-image: url('venuss.webp'); /* Vénusz kép */
+    background-image: url('Images/venuss.webp'); /* Vénusz kép */
     top: 130px;
     left: 310px;
 }
 
 .planet.earth {
-    background-image: url('fold.jpg'); /* Föld kép */
+    background-image: url('Images/fold.jpg'); /* Föld kép */
     top: 100px;
     left: 370px;
 }
 
 .planet.mars {
-    background-image: url('mars.jpg'); /* Mars kép */
+    background-image: url('Images/mars.jpg'); /* Mars kép */
     top: 80px;
     left: 450px;
 }
 
 .planet.jupiter {
-    background-image: url('Jupiter.jpg'); /* Jupiter kép */
+    background-image: url('Images/Jupiter.jpg'); /* Jupiter kép */
     top: 250px;
     left: 510px;
 }
 
 .planet.saturn {
-    background-image: url('saturnus.jfif'); /* Szaturnusz kép */
+    background-image: url('Images/saturnus.jfif'); /* Szaturnusz kép */
     top: 350px;
     left: 470px;
 }
 
 .planet.uranus {
-    background-image: url('uranus.jfif'); /* Uránusz kép */
+    background-image: url('Images/uranus.jfif'); /* Uránusz kép */
     top: 400px;
     left: 330px;
 }
 
 .planet.neptune {
-    background-image: url('PezBzd9Fehsq9XWgWMauVV.jpg'); /* Neptunusz kép */
+    background-image: url('Images/PezBzd9Fehsq9XWgWMauVV.jpg'); /* Neptunusz kép */
     top: 370px;
     left: 210px;
 }
