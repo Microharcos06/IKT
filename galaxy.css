@@ -13,6 +13,7 @@ body {
     margin: 0 auto;
     border: 1px solid white;
     border-radius: 50%;
+    display: flex;
     background-color: #000;
 }
 
@@ -96,7 +97,6 @@ nav.menu {
     z-index: 10;
 }
 
-/* Menu styling */
 nav.menu ul {
     list-style-type: none;
     margin: 0;
@@ -104,19 +104,19 @@ nav.menu ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between menu items */
+    gap: 20px; 
 }
 
 nav.menu ul li a {
     text-decoration: none;
-    color: white; /* Menu link text color */
+    color: white;
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1); /* Optional: subtle background */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 nav.menu ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Light up background on hover */
+    background-color: rgba(255, 255, 255, 0.3); 
 }
